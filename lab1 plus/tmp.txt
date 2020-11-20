@@ -1,0 +1,826 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    31733     0.00     0.00  block_manager::freeNode::freeNode(unsigned int)
+  0.00      0.00     0.00     1023     0.00     0.00  inode_manager::freeNode::freeNode(unsigned int)
+  0.00      0.00     0.00       16     0.00     0.00  std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*)
+  0.00      0.00     0.00       15     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin()
+  0.00      0.00     0.00       13     0.00     0.00  block_manager::read_block(unsigned int, char*)
+  0.00      0.00     0.00       13     0.00     0.00  disk::read_block(unsigned int, char*)
+  0.00      0.00     0.00       12     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::size() const
+  0.00      0.00     0.00       12     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end()
+  0.00      0.00     0.00       12     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_end()
+  0.00      0.00     0.00       11     0.00     0.00  extent_client::getattr(unsigned long long, extent_protocol::attr&)
+  0.00      0.00     0.00       11     0.00     0.00  extent_server::getattr(unsigned long long, extent_protocol::attr&)
+  0.00      0.00     0.00       11     0.00     0.00  inode_manager::getattr(unsigned int, extent_protocol::attr&)
+  0.00      0.00     0.00       11     0.00     0.00  inode_manager::get_inode(unsigned int)
+  0.00      0.00     0.00       11     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*)
+  0.00      0.00     0.00        9     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize()
+  0.00      0.00     0.00        8     0.00     0.00  __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::base() const
+  0.00      0.00     0.00        8     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::operator[](unsigned long)
+  0.00      0.00     0.00        7     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~new_allocator()
+  0.00      0.00     0.00        7     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() const
+  0.00      0.00     0.00        7     0.00     0.00  std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~allocator()
+  0.00      0.00     0.00        7     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map()
+  0.00      0.00     0.00        7     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl()
+  0.00      0.00     0.00        7     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree()
+  0.00      0.00     0.00        6     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator()
+  0.00      0.00     0.00        6     0.00     0.00  __gnu_cxx::new_allocator<yfs_client::dir>::max_size() const
+  0.00      0.00     0.00        6     0.00     0.00  std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator()
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00        6     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map()
+  0.00      0.00     0.00        6     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl()
+  0.00      0.00     0.00        6     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree()
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&)
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::max_size(std::allocator<yfs_client::dir> const&)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::__normal_iterator(yfs_client::dir* const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() const
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator==(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator!=(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const
+  0.00      0.00     0.00        4     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*)
+  0.00      0.00     0.00        4     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end()
+  0.00      0.00     0.00        4     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_leftmost()
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_rightmost()
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::string const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear()
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root()
+  0.00      0.00     0.00        4     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::dir* std::uninitialized_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*)
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::dir* std::__uninitialized_copy_a<yfs_client::dir*, yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+  0.00      0.00     0.00        4     0.00     0.00  yfs_client::dir* std::__uninitialized_move_if_noexcept_a<yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir> >(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+  0.00      0.00     0.00        3     0.00     0.00  yfs_client::dir::dir(yfs_client::dir const&)
+  0.00      0.00     0.00        3     0.00     0.00  yfs_client::dir::~dir()
+  0.00      0.00     0.00        3     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_get_Node_allocator() const
+  0.00      0.00     0.00        3     0.00     0.00  std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.00     0.00        2     0.00     0.00  yfs_client::dir::dir(unsigned long long)
+  0.00      0.00     0.00        2     0.00     0.00  block_manager::write_block(unsigned int, char const*)
+  0.00      0.00     0.00        2     0.00     0.00  inode_manager::put_inode(unsigned int, inode*)
+  0.00      0.00     0.00        2     0.00     0.00  disk::write_block(unsigned int, char const*)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<yfs_client::dir>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&)
+  0.00      0.00     0.00        2     0.00     0.00  void __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::construct<yfs_client::dir>(std::allocator<yfs_client::dir>&, yfs_client::dir*, yfs_client::dir const&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::difference_type __gnu_cxx::operator-<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&, __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_deallocate(yfs_client::dir*, unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::end()
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::begin()
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&)
+  0.00      0.00     0.00        2     0.00     0.00  yfs_client::dir* std::__addressof<yfs_client::dir>(yfs_client::dir&)
+  0.00      0.00     0.00        2     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*)
+  0.00      0.00     0.00        2     0.00     0.00  void std::_Destroy<yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN10yfs_clientC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13extent_clientC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13extent_serverC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN4diskC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_myid
+  0.00      0.00     0.00        1     0.00     0.00  fuseserver_createhelper(unsigned long, char const*, unsigned int, fuse_entry_param*, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  getattr(unsigned long long, stat&)
+  0.00      0.00     0.00        1     0.00     0.00  yfs_client::isdir(unsigned long long)
+  0.00      0.00     0.00        1     0.00     0.00  yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&)
+  0.00      0.00     0.00        1     0.00     0.00  yfs_client::getdir(unsigned long long, yfs_client::dirinfo&)
+  0.00      0.00     0.00        1     0.00     0.00  yfs_client::isfile(unsigned long long)
+  0.00      0.00     0.00        1     0.00     0.00  yfs_client::yfs_client()
+  0.00      0.00     0.00        1     0.00     0.00  block_manager::block_manager()
+  0.00      0.00     0.00        1     0.00     0.00  extent_client::create(unsigned int, unsigned long long&)
+  0.00      0.00     0.00        1     0.00     0.00  extent_client::extent_client()
+  0.00      0.00     0.00        1     0.00     0.00  extent_server::create(unsigned int, unsigned long long&)
+  0.00      0.00     0.00        1     0.00     0.00  extent_server::extent_server()
+  0.00      0.00     0.00        1     0.00     0.00  inode_manager::alloc_inode(unsigned int)
+  0.00      0.00     0.00        1     0.00     0.00  inode_manager::inode_manager()
+  0.00      0.00     0.00        1     0.00     0.00  disk::disk()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<yfs_client::dir>::deallocate(yfs_client::dir*, unsigned long)
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<yfs_client::dir>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<yfs_client::dir>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::map<unsigned int, int, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::map()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::vector()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_M_initialize()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree()
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&)
+  0.00      0.00     0.00        1     0.00     0.00  void std::_Destroy<yfs_client::dir>(yfs_client::dir*)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00   31733/31733       block_manager::block_manager() [106]
+[8]      0.0    0.00    0.00   31733         block_manager::freeNode::freeNode(unsigned int) [8]
+-----------------------------------------------
+                0.00    0.00    1023/1023        inode_manager::inode_manager() [112]
+[9]      0.0    0.00    0.00    1023         inode_manager::freeNode::freeNode(unsigned int) [9]
+-----------------------------------------------
+                0.00    0.00       4/16          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::string const&) [52]
+                0.00    0.00      12/16          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [15]
+[10]     0.0    0.00    0.00      16         std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [10]
+-----------------------------------------------
+                0.00    0.00       4/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+                0.00    0.00       4/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+                0.00    0.00       7/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree() [30]
+[11]     0.0    0.00    0.00      15         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin() [11]
+-----------------------------------------------
+                0.00    0.00       2/13          inode_manager::put_inode(unsigned int, inode*) [71]
+                0.00    0.00      11/13          inode_manager::get_inode(unsigned int) [20]
+[12]     0.0    0.00    0.00      13         block_manager::read_block(unsigned int, char*) [12]
+                0.00    0.00      13/13          disk::read_block(unsigned int, char*) [13]
+-----------------------------------------------
+                0.00    0.00      13/13          block_manager::read_block(unsigned int, char*) [12]
+[13]     0.0    0.00    0.00      13         disk::read_block(unsigned int, char*) [13]
+-----------------------------------------------
+                0.00    0.00       4/12          yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+                0.00    0.00       8/12          std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [77]
+[14]     0.0    0.00    0.00      12         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::size() const [14]
+-----------------------------------------------
+                0.00    0.00       4/12          std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [47]
+                0.00    0.00       8/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+[15]     0.0    0.00    0.00      12         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [15]
+                0.00    0.00      12/16          std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [10]
+-----------------------------------------------
+                0.00    0.00       4/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+                0.00    0.00       8/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+[16]     0.0    0.00    0.00      12         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_end() [16]
+-----------------------------------------------
+                0.00    0.00       1/11          yfs_client::isfile(unsigned long long) [104]
+                0.00    0.00       1/11          yfs_client::isdir(unsigned long long) [101]
+                0.00    0.00       1/11          yfs_client::getdir(unsigned long long, yfs_client::dirinfo&) [103]
+                0.00    0.00       4/11          yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+                0.00    0.00       4/11          yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+[17]     0.0    0.00    0.00      11         extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+                0.00    0.00      11/11          extent_server::getattr(unsigned long long, extent_protocol::attr&) [18]
+-----------------------------------------------
+                0.00    0.00      11/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+[18]     0.0    0.00    0.00      11         extent_server::getattr(unsigned long long, extent_protocol::attr&) [18]
+                0.00    0.00      11/11          inode_manager::getattr(unsigned int, extent_protocol::attr&) [19]
+-----------------------------------------------
+                0.00    0.00      11/11          extent_server::getattr(unsigned long long, extent_protocol::attr&) [18]
+[19]     0.0    0.00    0.00      11         inode_manager::getattr(unsigned int, extent_protocol::attr&) [19]
+                0.00    0.00      11/11          inode_manager::get_inode(unsigned int) [20]
+-----------------------------------------------
+                0.00    0.00      11/11          inode_manager::getattr(unsigned int, extent_protocol::attr&) [19]
+[20]     0.0    0.00    0.00      11         inode_manager::get_inode(unsigned int) [20]
+                0.00    0.00      11/13          block_manager::read_block(unsigned int, char*) [12]
+-----------------------------------------------
+                0.00    0.00       4/11          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+                0.00    0.00       7/11          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree() [30]
+[21]     0.0    0.00    0.00      11         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [21]
+-----------------------------------------------
+                0.00    0.00       3/9           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [66]
+                0.00    0.00       6/9           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [36]
+[22]     0.0    0.00    0.00       9         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize() [22]
+-----------------------------------------------
+                0.00    0.00       4/8           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::difference_type __gnu_cxx::operator-<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&, __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&) [76]
+[23]     0.0    0.00    0.00       8         __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       8/8           yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+[24]     0.0    0.00    0.00       8         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::operator[](unsigned long) [24]
+-----------------------------------------------
+                0.00    0.00       7/7           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~allocator() [27]
+[25]     0.0    0.00    0.00       7         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~new_allocator() [25]
+-----------------------------------------------
+                0.00    0.00       3/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [67]
+                0.00    0.00       4/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [56]
+[26]     0.0    0.00    0.00       7         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() const [26]
+-----------------------------------------------
+                0.00    0.00       7/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [29]
+[27]     0.0    0.00    0.00       7         std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~allocator() [27]
+                0.00    0.00       7/7           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~new_allocator() [25]
+-----------------------------------------------
+                0.00    0.00       3/7           yfs_client::dir::~dir() [61]
+                0.00    0.00       4/7           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[28]     0.0    0.00    0.00       7         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map() [28]
+                0.00    0.00       7/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree() [30]
+-----------------------------------------------
+                0.00    0.00       7/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree() [30]
+[29]     0.0    0.00    0.00       7         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [29]
+                0.00    0.00       7/7           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~allocator() [27]
+-----------------------------------------------
+                0.00    0.00       7/7           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map() [28]
+[30]     0.0    0.00    0.00       7         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree() [30]
+                0.00    0.00       7/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin() [11]
+                0.00    0.00       7/11          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [21]
+                0.00    0.00       7/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [29]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator() [33]
+[31]     0.0    0.00    0.00       6         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator() [31]
+-----------------------------------------------
+                0.00    0.00       2/6           __gnu_cxx::new_allocator<yfs_client::dir>::allocate(unsigned long, void const*) [73]
+                0.00    0.00       4/6           __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::max_size(std::allocator<yfs_client::dir> const&) [40]
+[32]     0.0    0.00    0.00       6         __gnu_cxx::new_allocator<yfs_client::dir>::max_size() const [32]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [36]
+[33]     0.0    0.00    0.00       6         std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator() [33]
+                0.00    0.00       6/6           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator() [31]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[34]     0.0    0.00    0.00       6         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() [34]
+-----------------------------------------------
+                0.00    0.00       2/6           yfs_client::dir::dir(unsigned long long) [69]
+                0.00    0.00       4/6           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[35]     0.0    0.00    0.00       6         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map() [35]
+                0.00    0.00       6/6           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree() [37]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree() [37]
+[36]     0.0    0.00    0.00       6         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [36]
+                0.00    0.00       6/6           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator() [33]
+                0.00    0.00       6/9           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize() [22]
+-----------------------------------------------
+                0.00    0.00       6/6           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map() [35]
+[37]     0.0    0.00    0.00       6         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree() [37]
+                0.00    0.00       6/6           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [36]
+-----------------------------------------------
+                0.00    0.00       1/4           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+                0.00    0.00       3/4           fuseserver_lookup(fuse_req*, unsigned long, char const*) [135]
+[38]     0.0    0.00    0.00       4         yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+                0.00    0.00       4/6           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map() [35]
+                0.00    0.00       4/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+                0.00    0.00       4/4           yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+                0.00    0.00       4/4           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [48]
+                0.00    0.00       4/4           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [47]
+                0.00    0.00       4/4           std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator!=(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [44]
+                0.00    0.00       4/7           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map() [28]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[39]     0.0    0.00    0.00       4         yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+                0.00    0.00       8/8           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::operator[](unsigned long) [24]
+                0.00    0.00       4/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+                0.00    0.00       4/4           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [49]
+                0.00    0.00       4/12          std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::size() const [14]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const [45]
+[40]     0.0    0.00    0.00       4         __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::max_size(std::allocator<yfs_client::dir> const&) [40]
+                0.00    0.00       4/6           __gnu_cxx::new_allocator<yfs_client::dir>::max_size() const [32]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::end() [82]
+                0.00    0.00       2/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::begin() [83]
+[41]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::__normal_iterator(yfs_client::dir* const&) [41]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const [45]
+[42]     0.0    0.00    0.00       4         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() const [42]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+[43]     0.0    0.00    0.00       4         std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator==(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [43]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[44]     0.0    0.00    0.00       4         std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator!=(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [44]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [77]
+[45]     0.0    0.00    0.00       4         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const [45]
+                0.00    0.00       4/4           __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::max_size(std::allocator<yfs_client::dir> const&) [40]
+                0.00    0.00       4/4           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() const [42]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::dir* std::uninitialized_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [57]
+[46]     0.0    0.00    0.00       4         yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [46]
+                0.00    0.00       1/2           yfs_client::dir* std::__addressof<yfs_client::dir>(yfs_client::dir&) [85]
+                0.00    0.00       1/1           void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&) [126]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[47]     0.0    0.00    0.00       4         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [47]
+                0.00    0.00       4/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [15]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+[48]     0.0    0.00    0.00       4         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [48]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [39]
+[49]     0.0    0.00    0.00       4         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [49]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [56]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+[50]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_leftmost() [50]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+[51]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_rightmost() [51]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+[52]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::string const&) [52]
+                0.00    0.00       4/16          std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [10]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [48]
+[53]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [53]
+                0.00    0.00       8/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [15]
+                0.00    0.00       4/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_end() [16]
+                0.00    0.00       4/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin() [11]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::string const&) [52]
+                0.00    0.00       4/4           std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator==(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [43]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [56]
+[54]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+                0.00    0.00       8/12          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_end() [16]
+                0.00    0.00       4/15          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin() [11]
+                0.00    0.00       4/11          std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [21]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_leftmost() [50]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() [55]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_rightmost() [51]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+[55]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() [55]
+-----------------------------------------------
+                0.00    0.00       4/4           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [49]
+[56]     0.0    0.00    0.00       4         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [56]
+                0.00    0.00       4/4           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear() [54]
+                0.00    0.00       4/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() const [26]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::dir* std::__uninitialized_copy_a<yfs_client::dir*, yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [58]
+[57]     0.0    0.00    0.00       4         yfs_client::dir* std::uninitialized_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [57]
+                0.00    0.00       4/4           yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [46]
+-----------------------------------------------
+                0.00    0.00       4/4           yfs_client::dir* std::__uninitialized_move_if_noexcept_a<yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir> >(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [59]
+[58]     0.0    0.00    0.00       4         yfs_client::dir* std::__uninitialized_copy_a<yfs_client::dir*, yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [58]
+                0.00    0.00       4/4           yfs_client::dir* std::uninitialized_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [57]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[59]     0.0    0.00    0.00       4         yfs_client::dir* std::__uninitialized_move_if_noexcept_a<yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir> >(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [59]
+                0.00    0.00       4/4           yfs_client::dir* std::__uninitialized_copy_a<yfs_client::dir*, yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [58]
+-----------------------------------------------
+                0.00    0.00       1/3           void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&) [126]
+                0.00    0.00       2/3           __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&) [74]
+[60]     0.0    0.00    0.00       3         yfs_client::dir::dir(yfs_client::dir const&) [60]
+                0.00    0.00       3/3           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [65]
+-----------------------------------------------
+                0.00    0.00       1/3           yfs_client::yfs_client() [105]
+                0.00    0.00       1/3           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+                0.00    0.00       1/3           void std::_Destroy<yfs_client::dir>(yfs_client::dir*) [127]
+[61]     0.0    0.00    0.00       3         yfs_client::dir::~dir() [61]
+                0.00    0.00       3/7           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map() [28]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [64]
+[62]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [62]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [67]
+[63]     0.0    0.00    0.00       3         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_get_Node_allocator() const [63]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [66]
+[64]     0.0    0.00    0.00       3         std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [64]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [62]
+-----------------------------------------------
+                0.00    0.00       3/3           yfs_client::dir::dir(yfs_client::dir const&) [60]
+[65]     0.0    0.00    0.00       3         std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [65]
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [67]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [67]
+[66]     0.0    0.00    0.00       3         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [66]
+                0.00    0.00       3/3           std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [64]
+                0.00    0.00       3/9           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize() [22]
+-----------------------------------------------
+                0.00    0.00       3/3           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [65]
+[67]     0.0    0.00    0.00       3         std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [67]
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_get_Node_allocator() const [63]
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [66]
+                0.00    0.00       3/7           std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() const [26]
+-----------------------------------------------
+                0.00    0.00       1/3           void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&) [126]
+                0.00    0.00       2/3           __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&) [74]
+[68]     0.0    0.00    0.00       3         operator new(unsigned long, void*) [68]
+-----------------------------------------------
+                0.00    0.00       1/2           yfs_client::yfs_client() [105]
+                0.00    0.00       1/2           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+[69]     0.0    0.00    0.00       2         yfs_client::dir::dir(unsigned long long) [69]
+                0.00    0.00       2/6           std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map() [35]
+-----------------------------------------------
+                0.00    0.00       2/2           inode_manager::put_inode(unsigned int, inode*) [71]
+[70]     0.0    0.00    0.00       2         block_manager::write_block(unsigned int, char const*) [70]
+                0.00    0.00       2/2           disk::write_block(unsigned int, char const*) [72]
+-----------------------------------------------
+                0.00    0.00       1/2           inode_manager::inode_manager() [112]
+                0.00    0.00       1/2           inode_manager::alloc_inode(unsigned int) [111]
+[71]     0.0    0.00    0.00       2         inode_manager::put_inode(unsigned int, inode*) [71]
+                0.00    0.00       2/13          block_manager::read_block(unsigned int, char*) [12]
+                0.00    0.00       2/2           block_manager::write_block(unsigned int, char const*) [70]
+-----------------------------------------------
+                0.00    0.00       2/2           block_manager::write_block(unsigned int, char const*) [70]
+[72]     0.0    0.00    0.00       2         disk::write_block(unsigned int, char const*) [72]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_allocate(unsigned long) [79]
+[73]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<yfs_client::dir>::allocate(unsigned long, void const*) [73]
+                0.00    0.00       2/6           __gnu_cxx::new_allocator<yfs_client::dir>::max_size() const [32]
+-----------------------------------------------
+                0.00    0.00       2/2           void __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::construct<yfs_client::dir>(std::allocator<yfs_client::dir>&, yfs_client::dir*, yfs_client::dir const&) [75]
+[74]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&) [74]
+                0.00    0.00       2/3           operator new(unsigned long, void*) [68]
+                0.00    0.00       2/3           yfs_client::dir::dir(yfs_client::dir const&) [60]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[75]     0.0    0.00    0.00       2         void __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::construct<yfs_client::dir>(std::allocator<yfs_client::dir>&, yfs_client::dir*, yfs_client::dir const&) [75]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&) [74]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[76]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::difference_type __gnu_cxx::operator-<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&, __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&) [76]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[77]     0.0    0.00    0.00       2         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [77]
+                0.00    0.00       8/12          std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::size() const [14]
+                0.00    0.00       4/4           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const [45]
+                0.00    0.00       2/2           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [86]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [87]
+[78]     0.0    0.00    0.00       2         void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [78]
+                0.00    0.00       1/2           yfs_client::dir* std::__addressof<yfs_client::dir>(yfs_client::dir&) [85]
+                0.00    0.00       1/1           void std::_Destroy<yfs_client::dir>(yfs_client::dir*) [127]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[79]     0.0    0.00    0.00       2         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_allocate(unsigned long) [79]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<yfs_client::dir>::allocate(unsigned long, void const*) [73]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[80]     0.0    0.00    0.00       2         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_deallocate(yfs_client::dir*, unsigned long) [80]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<yfs_client::dir>::deallocate(yfs_client::dir*, unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&) [84]
+[81]     0.0    0.00    0.00       2         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+                0.00    0.00       6/6           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() [34]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::base() const [23]
+                0.00    0.00       4/4           yfs_client::dir* std::__uninitialized_move_if_noexcept_a<yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir> >(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [59]
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [77]
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::begin() [83]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::difference_type __gnu_cxx::operator-<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&, __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&) [76]
+                0.00    0.00       2/2           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_allocate(unsigned long) [79]
+                0.00    0.00       2/2           void __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::construct<yfs_client::dir>(std::allocator<yfs_client::dir>&, yfs_client::dir*, yfs_client::dir const&) [75]
+                0.00    0.00       2/2           void std::_Destroy<yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [88]
+                0.00    0.00       2/2           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_deallocate(yfs_client::dir*, unsigned long) [80]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&) [84]
+[82]     0.0    0.00    0.00       2         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::end() [82]
+                0.00    0.00       2/4           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::__normal_iterator(yfs_client::dir* const&) [41]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[83]     0.0    0.00    0.00       2         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::begin() [83]
+                0.00    0.00       2/4           __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::__normal_iterator(yfs_client::dir* const&) [41]
+-----------------------------------------------
+                0.00    0.00       1/2           yfs_client::yfs_client() [105]
+                0.00    0.00       1/2           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+[84]     0.0    0.00    0.00       2         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&) [84]
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::end() [82]
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+-----------------------------------------------
+                0.00    0.00       1/2           void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [78]
+                0.00    0.00       1/2           yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [46]
+[85]     0.0    0.00    0.00       2         yfs_client::dir* std::__addressof<yfs_client::dir>(yfs_client::dir&) [85]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [77]
+[86]     0.0    0.00    0.00       2         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [86]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [88]
+[87]     0.0    0.00    0.00       2         void std::_Destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [87]
+                0.00    0.00       2/2           void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [78]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&) [81]
+[88]     0.0    0.00    0.00       2         void std::_Destroy<yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&) [88]
+                0.00    0.00       2/2           void std::_Destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [87]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [315]
+[89]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN10yfs_clientC2Ev [89]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [95]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [315]
+[90]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13extent_clientC2Ev [90]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [315]
+[91]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13extent_serverC2Ev [91]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [98]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [315]
+[92]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN4diskC2Ev [92]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [315]
+[93]     0.0    0.00    0.00       1         _GLOBAL__sub_I_myid [93]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [97]
+-----------------------------------------------
+                0.00    0.00       1/1           fuseserver_mkdir(fuse_req*, unsigned long, char const*, unsigned int) [131]
+[94]     0.0    0.00    0.00       1         fuseserver_createhelper(unsigned long, char const*, unsigned int, fuse_entry_param*, int) [94]
+                0.00    0.00       1/1           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+                0.00    0.00       1/1           getattr(unsigned long long, stat&) [100]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN10yfs_clientC2Ev [89]
+[95]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [95]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN13extent_clientC2Ev [90]
+[96]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [96]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_myid [93]
+[97]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [97]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN13extent_serverC2Ev [91]
+[98]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [98]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN4diskC2Ev [92]
+[99]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [99]
+-----------------------------------------------
+                0.00    0.00       1/1           fuseserver_createhelper(unsigned long, char const*, unsigned int, fuse_entry_param*, int) [94]
+[100]    0.0    0.00    0.00       1         getattr(unsigned long long, stat&) [100]
+                0.00    0.00       1/1           yfs_client::isfile(unsigned long long) [104]
+                0.00    0.00       1/1           yfs_client::isdir(unsigned long long) [101]
+                0.00    0.00       1/1           yfs_client::getdir(unsigned long long, yfs_client::dirinfo&) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           getattr(unsigned long long, stat&) [100]
+[101]    0.0    0.00    0.00       1         yfs_client::isdir(unsigned long long) [101]
+                0.00    0.00       1/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           fuseserver_createhelper(unsigned long, char const*, unsigned int, fuse_entry_param*, int) [94]
+[102]    0.0    0.00    0.00       1         yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+                0.00    0.00       1/4           yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [38]
+                0.00    0.00       1/1           extent_client::create(unsigned int, unsigned long long&) [107]
+                0.00    0.00       1/2           yfs_client::dir::dir(unsigned long long) [69]
+                0.00    0.00       1/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&) [84]
+                0.00    0.00       1/3           yfs_client::dir::~dir() [61]
+-----------------------------------------------
+                0.00    0.00       1/1           getattr(unsigned long long, stat&) [100]
+[103]    0.0    0.00    0.00       1         yfs_client::getdir(unsigned long long, yfs_client::dirinfo&) [103]
+                0.00    0.00       1/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           getattr(unsigned long long, stat&) [100]
+[104]    0.0    0.00    0.00       1         yfs_client::isfile(unsigned long long) [104]
+                0.00    0.00       1/11          extent_client::getattr(unsigned long long, extent_protocol::attr&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[105]    0.0    0.00    0.00       1         yfs_client::yfs_client() [105]
+                0.00    0.00       1/1           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::vector() [122]
+                0.00    0.00       1/1           extent_client::extent_client() [108]
+                0.00    0.00       1/2           yfs_client::dir::dir(unsigned long long) [69]
+                0.00    0.00       1/3           yfs_client::dir::~dir() [61]
+                0.00    0.00       1/2           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           inode_manager::inode_manager() [112]
+[106]    0.0    0.00    0.00       1         block_manager::block_manager() [106]
+                0.00    0.00   31733/31733       block_manager::freeNode::freeNode(unsigned int) [8]
+                0.00    0.00       1/1           std::map<unsigned int, int, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::map() [121]
+                0.00    0.00       1/1           disk::disk() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [102]
+[107]    0.0    0.00    0.00       1         extent_client::create(unsigned int, unsigned long long&) [107]
+                0.00    0.00       1/1           extent_server::create(unsigned int, unsigned long long&) [109]
+-----------------------------------------------
+                0.00    0.00       1/1           yfs_client::yfs_client() [105]
+[108]    0.0    0.00    0.00       1         extent_client::extent_client() [108]
+                0.00    0.00       1/1           extent_server::extent_server() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           extent_client::create(unsigned int, unsigned long long&) [107]
+[109]    0.0    0.00    0.00       1         extent_server::create(unsigned int, unsigned long long&) [109]
+                0.00    0.00       1/1           inode_manager::alloc_inode(unsigned int) [111]
+-----------------------------------------------
+                0.00    0.00       1/1           extent_client::extent_client() [108]
+[110]    0.0    0.00    0.00       1         extent_server::extent_server() [110]
+                0.00    0.00       1/1           inode_manager::inode_manager() [112]
+-----------------------------------------------
+                0.00    0.00       1/1           extent_server::create(unsigned int, unsigned long long&) [109]
+[111]    0.0    0.00    0.00       1         inode_manager::alloc_inode(unsigned int) [111]
+                0.00    0.00       1/2           inode_manager::put_inode(unsigned int, inode*) [71]
+-----------------------------------------------
+                0.00    0.00       1/1           extent_server::extent_server() [110]
+[112]    0.0    0.00    0.00       1         inode_manager::inode_manager() [112]
+                0.00    0.00    1023/1023        inode_manager::freeNode::freeNode(unsigned int) [9]
+                0.00    0.00       1/1           block_manager::block_manager() [106]
+                0.00    0.00       1/2           inode_manager::put_inode(unsigned int, inode*) [71]
+-----------------------------------------------
+                0.00    0.00       1/1           block_manager::block_manager() [106]
+[113]    0.0    0.00    0.00       1         disk::disk() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_deallocate(yfs_client::dir*, unsigned long) [80]
+[114]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<yfs_client::dir>::deallocate(yfs_client::dir*, unsigned long) [114]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<yfs_client::dir>::allocator() [117]
+[115]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<yfs_client::dir>::new_allocator() [115]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::allocator() [118]
+[116]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::new_allocator() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_impl::_Vector_impl() [119]
+[117]    0.0    0.00    0.00       1         std::allocator<yfs_client::dir>::allocator() [117]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<yfs_client::dir>::new_allocator() [115]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl() [124]
+[118]    0.0    0.00    0.00       1         std::allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::allocator() [118]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::new_allocator() [116]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_base() [120]
+[119]    0.0    0.00    0.00       1         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_impl::_Vector_impl() [119]
+                0.00    0.00       1/1           std::allocator<yfs_client::dir>::allocator() [117]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::vector() [122]
+[120]    0.0    0.00    0.00       1         std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_base() [120]
+                0.00    0.00       1/1           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_impl::_Vector_impl() [119]
+-----------------------------------------------
+                0.00    0.00       1/1           block_manager::block_manager() [106]
+[121]    0.0    0.00    0.00       1         std::map<unsigned int, int, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::map() [121]
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree() [125]
+-----------------------------------------------
+                0.00    0.00       1/1           yfs_client::yfs_client() [105]
+[122]    0.0    0.00    0.00       1         std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::vector() [122]
+                0.00    0.00       1/1           std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_base() [120]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl() [124]
+[123]    0.0    0.00    0.00       1         std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_M_initialize() [123]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree() [125]
+[124]    0.0    0.00    0.00       1         std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl() [124]
+                0.00    0.00       1/1           std::allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::allocator() [118]
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_M_initialize() [123]
+-----------------------------------------------
+                0.00    0.00       1/1           std::map<unsigned int, int, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::map() [121]
+[125]    0.0    0.00    0.00       1         std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree() [125]
+                0.00    0.00       1/1           std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl() [124]
+-----------------------------------------------
+                0.00    0.00       1/1           yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [46]
+[126]    0.0    0.00    0.00       1         void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&) [126]
+                0.00    0.00       1/3           operator new(unsigned long, void*) [68]
+                0.00    0.00       1/3           yfs_client::dir::dir(yfs_client::dir const&) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [78]
+[127]    0.0    0.00    0.00       1         void std::_Destroy<yfs_client::dir>(yfs_client::dir*) [127]
+                0.00    0.00       1/3           yfs_client::dir::~dir() [61]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [89] _GLOBAL__sub_I__ZN10yfs_clientC2Ev (yfs_client.cc) [113] disk::disk() [28] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~map()
+  [90] _GLOBAL__sub_I__ZN13extent_clientC2Ev (extent_client.cc) [114] __gnu_cxx::new_allocator<yfs_client::dir>::deallocate(yfs_client::dir*, unsigned long) [49] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  [91] _GLOBAL__sub_I__ZN13extent_serverC2Ev (extent_server.cc) [73] __gnu_cxx::new_allocator<yfs_client::dir>::allocate(unsigned long, void const*) [121] std::map<unsigned int, int, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::map()
+  [92] _GLOBAL__sub_I__ZN4diskC2Ev (inode_manager.cc) [74] __gnu_cxx::new_allocator<yfs_client::dir>::construct(yfs_client::dir*, yfs_client::dir const&) [81] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_insert_aux(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >, yfs_client::dir const&)
+  [93] _GLOBAL__sub_I_myid (fuse.cc) [115] __gnu_cxx::new_allocator<yfs_client::dir>::new_allocator() [82] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::end()
+  [94] fuseserver_createhelper(unsigned long, char const*, unsigned int, fuse_entry_param*, int) [62] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [83] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::begin()
+  [95] __static_initialization_and_destruction_0(int, int) (yfs_client.cc) [31] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::new_allocator() [84] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::push_back(yfs_client::dir const&)
+  [96] __static_initialization_and_destruction_0(int, int) (extent_client.cc) [25] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~new_allocator() [122] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::vector()
+  [97] __static_initialization_and_destruction_0(int, int) (fuse.cc) [116] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::new_allocator() [24] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::operator[](unsigned long)
+  [98] __static_initialization_and_destruction_0(int, int) (extent_server.cc) [40] __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::max_size(std::allocator<yfs_client::dir> const&) [50] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_leftmost()
+  [99] __static_initialization_and_destruction_0(int, int) (inode_manager.cc) [75] void __gnu_cxx::__alloc_traits<std::allocator<yfs_client::dir> >::construct<yfs_client::dir>(std::allocator<yfs_client::dir>&, yfs_client::dir*, yfs_client::dir const&) [51] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_rightmost()
+ [100] getattr(unsigned long long, stat&) [41] __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::__normal_iterator(yfs_client::dir* const&) [22] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize()
+  [60] yfs_client::dir::dir(yfs_client::dir const&) [76] __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::difference_type __gnu_cxx::operator-<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >(__gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&, __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > > const&) [36] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl()
+  [69] yfs_client::dir::dir(unsigned long long) [32] __gnu_cxx::new_allocator<yfs_client::dir>::max_size() const [66] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl(std::less<std::string> const&, std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&)
+  [61] yfs_client::dir::~dir() [23] __gnu_cxx::__normal_iterator<yfs_client::dir*, std::vector<yfs_client::dir, std::allocator<yfs_client::dir> > >::base() const [29] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl()
+ [101] yfs_client::isdir(unsigned long long) [42] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() const [52] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_lower_bound(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*, std::string const&)
+ [102] yfs_client::mkdir(unsigned long long, char const*, unsigned int, unsigned long long&) [43] std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator==(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [15] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end()
+ [103] yfs_client::getdir(unsigned long long, yfs_client::dirinfo&) [44] std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::operator!=(std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> > const&) const [53] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&)
+ [104] yfs_client::isfile(unsigned long long) [77] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_check_len(unsigned long, char const*) const [54] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::clear()
+  [38] yfs_client::lookup(unsigned long long, char const*, bool&, unsigned long long&) [14] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::size() const [16] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_end()
+  [39] yfs_client::readdir(unsigned long long, std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >&) [45] std::vector<yfs_client::dir, std::allocator<yfs_client::dir> >::max_size() const [55] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root()
+ [105] yfs_client::yfs_client() [63] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_get_Node_allocator() const [11] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_begin()
+  [12] block_manager::read_block(unsigned int, char*) [26] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_root() const [21] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_M_erase(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*)
+  [70] block_manager::write_block(unsigned int, char const*) [117] std::allocator<yfs_client::dir>::allocator() [37] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree()
+   [8] block_manager::freeNode::freeNode(unsigned int) [64] std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > > const&) [67] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::_Rb_tree(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+ [106] block_manager::block_manager() [33] std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::allocator() [30] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::~_Rb_tree()
+ [107] extent_client::create(unsigned int, unsigned long long&) [27] std::allocator<std::_Rb_tree_node<std::pair<std::string const, unsigned long long> > >::~allocator() [56] std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::operator=(std::_Rb_tree<std::string, std::pair<std::string const, unsigned long long>, std::_Select1st<std::pair<std::string const, unsigned long long> >, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&)
+  [17] extent_client::getattr(unsigned long long, extent_protocol::attr&) [118] std::allocator<std::_Rb_tree_node<std::pair<unsigned int const, int> > >::allocator() [123] std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_M_initialize()
+ [108] extent_client::extent_client() [78] void std::_Destroy_aux<false>::__destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*) [124] std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree_impl<std::less<unsigned int>, false>::_Rb_tree_impl()
+ [109] extent_server::create(unsigned int, unsigned long long&) [79] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_allocate(unsigned long) [125] std::_Rb_tree<unsigned int, std::pair<unsigned int const, int>, std::_Select1st<std::pair<unsigned int const, int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, int> > >::_Rb_tree()
+  [18] extent_server::getattr(unsigned long long, extent_protocol::attr&) [119] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_impl::_Vector_impl() [126] void std::_Construct<yfs_client::dir, yfs_client::dir>(yfs_client::dir*, yfs_client::dir const&)
+ [110] extent_server::extent_server() [80] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_deallocate(yfs_client::dir*, unsigned long) [85] yfs_client::dir* std::__addressof<yfs_client::dir>(yfs_client::dir&)
+ [111] inode_manager::alloc_inode(unsigned int) [34] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_M_get_Tp_allocator() [57] yfs_client::dir* std::uninitialized_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*)
+  [19] inode_manager::getattr(unsigned int, extent_protocol::attr&) [120] std::_Vector_base<yfs_client::dir, std::allocator<yfs_client::dir> >::_Vector_base() [58] yfs_client::dir* std::__uninitialized_copy_a<yfs_client::dir*, yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+   [9] inode_manager::freeNode::freeNode(unsigned int) [10] std::_Rb_tree_iterator<std::pair<std::string const, unsigned long long> >::_Rb_tree_iterator(std::_Rb_tree_node<std::pair<std::string const, unsigned long long> >*) [59] yfs_client::dir* std::__uninitialized_move_if_noexcept_a<yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir> >(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+  [20] inode_manager::get_inode(unsigned int) [46] yfs_client::dir* std::__uninitialized_copy<false>::__uninit_copy<yfs_client::dir*, yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*, yfs_client::dir*) [86] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [71] inode_manager::put_inode(unsigned int, inode*) [47] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::end() [127] void std::_Destroy<yfs_client::dir>(yfs_client::dir*)
+ [112] inode_manager::inode_manager() [48] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::find(std::string const&) [87] void std::_Destroy<yfs_client::dir*>(yfs_client::dir*, yfs_client::dir*)
+  [13] disk::read_block(unsigned int, char*) [65] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map(std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > > const&) [88] void std::_Destroy<yfs_client::dir*, yfs_client::dir>(yfs_client::dir*, yfs_client::dir*, std::allocator<yfs_client::dir>&)
+  [72] disk::write_block(unsigned int, char const*) [35] std::map<std::string, unsigned long long, std::less<std::string>, std::allocator<std::pair<std::string const, unsigned long long> > >::map() [68] operator new(unsigned long, void*)
