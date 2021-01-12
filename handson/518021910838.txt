@@ -1,0 +1,12 @@
+1.studentB是在actionid=2的时候创建，而这一action没有进行commit和end操作，因此无法将这一账户写入数据库
+2.studentA和studentC是活动的，恢复过程中studentA会出现1000、900，studentC会出现3000、3100
+3.因为借款操作action3没有end就出现了crash，此时action3的操作还在log中，未写进数据库中，因此只有action1的数据存入数据库中了
+4.DB会去扫描log，从而将studentA的最终数据900和studentC的最终数据3100写入数据库
+5.符合，恢复系统如预期将action3的操作结果写回了数据库
+6.winner:在recover时commit但未写入数据库中的action，在recover中成功恢复的
+   loser:未commit的action，未恢复  
+   done：已经end的action，在recover中不进行操作的action
+7.action2的操作并没有commit，所以checkpoint会将这个操作abort掉，因此没有写进数据库中
+8.6行，使得log的访问行数减少，不需要每一次都从头到尾读一遍，只有从最新的checkpoint开始即可
+9.相同，这种属性为一致性
+10.在两次恢复中，后一次使用的log比前一次的log多扫描了一行：type: END action_id: 3，即第一次恢复将action3标记为了done，从而在下一次恢复时就不会出现再次恢复这一action的情况
